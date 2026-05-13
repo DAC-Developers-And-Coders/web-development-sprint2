@@ -337,6 +337,38 @@ footer
     line-height: 1.2;
 }
 
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-box 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--color-shadow);
+    width: 100%;
+    max-width: 360px;
+    min-width: 260px;
+    margin: 0 auto;
+}
+
+#login-box input 
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: var(--regular-font);
+}
+
 @keyframes animationView
 {
     from
