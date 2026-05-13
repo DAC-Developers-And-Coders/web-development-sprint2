@@ -339,6 +339,40 @@ footer
     line-height: 1.2;
 }
 
+.photo-stages.active 
+{
+    display: flex;
+}
+
+.button-click {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#nextBtn, #prevBtn {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border-radius: 50%;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#nextBtn:hover 
+{
+    background: var(--color-grey);
+}
+
+#prevBtn:hover
+{
+    background: var(--color-grey);
+}
 
 #container {
     height: 100vh;
