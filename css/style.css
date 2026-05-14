@@ -61,6 +61,16 @@ ul
     gap: 2dvh;
 }
 
+.hidden
+{
+    display: none;
+}
+
+#showLoginBtn
+{
+    cursor: pointer;
+}
+
 .hero
 {
     min-height: 324px;
@@ -422,4 +432,3 @@ footer
         transform: translateY(0);
     }
 }
-
