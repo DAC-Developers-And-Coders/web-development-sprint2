@@ -1,17 +1,17 @@
-function register(){
-    const login = document.getElementById('user').value
-    const password = document.getElementById('password').value 
+const register = () => {
+    const login = document.getElementById("user").value
+    const password = document.getElementById("password").value 
 
-    if(login === '' || password === ''){
-        alert('falta preencher a senha ou o usuário')
+    if(login === "" || password === ""){
+        alert("falta preencher a senha ou o usuário")
         return
     }
 
-    const users = JSON.parse(localStorage.getItem('users')) || []
+    const users = JSON.parse(localStorage.getItem("users")) || []
     const existentUsers = users.find(user => user.login === login)
 
     if(existentUsers){
-        alert('Usuário já existe')
+        alert("Usuário já existe")
         return
     }
 
@@ -20,19 +20,13 @@ function register(){
         password:password
     })
 
-    localStorage.setItem('users', JSON.stringify(users))
-    alert('Usuário cadastrado')
+    localStorage.setItem("users", JSON.stringify(users))
+    alert("Usuário cadastrado")
 }
 
-function login(){
-    const login = document.getElementById('user').value
-    const password = document.getElementById('password').value 
-    
-    if(login === "admin" && password === "admin"){
-        alert("Login realizado com sucesso");
-        window.location.href = "index.html";
-        return;
-    }
+const login = () => {
+    const login = document.getElementById("user").value
+    const password = document.getElementById("password").value
 
     const users = JSON.parse(localStorage.getItem("users")) || [];
 

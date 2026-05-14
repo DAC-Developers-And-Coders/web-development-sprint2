@@ -56,6 +56,8 @@ ul
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
     gap: 2dvh;
 }
 
@@ -351,7 +353,7 @@ footer
     gap: 20px;
 }
 
-#nextBtn, #prevBtn {
+#nextBtn, #prevBtn, #chooseBtn {
     background: var(--color-dark);
     color: var(--color-white);
     border-radius: 50%;
